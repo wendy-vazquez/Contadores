@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center">
+  <div class="p-5 bg-white shadow-lg rounded">
+    <h1 class="text-success fw-bold">Bienvenido a Master Of Nutrition</h1>
+    <p class="mt-3">Explora nuestras herramientas para conocer tu salud y mejorar tu nutrición.</p>
+    <a href="{{ url_for('calculadoras') }}" class="btn btn-success mt-3 px-4">Ir a Calculadoras</a>
+  </div>
+</div>
+{% endblock %}

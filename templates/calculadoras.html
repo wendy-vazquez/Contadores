@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center">
+  <h2 class="text-success fw-bold mb-4">Calculadoras Nutricionales</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div class="col">
+      <div class="card border-success h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-success">IMC</h5>
+          <p class="card-text">Calcula tu índice de masa corporal.</p>
+          <a href="{{ url_for('imc') }}" class="btn btn-outline-success w-100">Ir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-success h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-success">TMB</h5>
+          <p class="card-text">Conoce tu tasa metabólica basal diaria.</p>
+          <a href="{{ url_for('tmb') }}" class="btn btn-outline-success w-100">Ir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-success h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-success">Gasto Energético Total</h5>
+          <p class="card-text">Calcula cuántas calorías quemas por día.</p>
+          <a href="{{ url_for('gct') }}" class="btn btn-outline-success w-100">Ir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-success h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-success">Peso Ideal</h5>
+          <p class="card-text">Descubre tu peso corporal ideal.</p>
+          <a href="{{ url_for('pesoideal') }}" class="btn btn-outline-success w-100">Ir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-success h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-success">Macronutrientes</h5>
+          <p class="card-text">Divide tus calorías en proteínas, grasas y carbohidratos.</p>
+          <a href="{{ url_for('macronutrientes') }}" class="btn btn-outline-success w-100">Ir</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
